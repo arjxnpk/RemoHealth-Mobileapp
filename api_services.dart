@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 
 class HealthApiService {
   static const apiUrl = 'https://health-model-api-1.onrender.com';
-  static const apiKey = 'aadit123securekey';
+  static const apiKey = '';
 
   Future<String> sendToModel(double heartRate, double spo2, double temp) async {
     final response = await http.post(
