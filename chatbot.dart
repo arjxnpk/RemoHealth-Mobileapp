@@ -25,13 +25,13 @@ class _ChatbotScreenState extends State<Chatbot> {
   // List of map to hold chat history: {'sender': 'user' or 'bot', 'message': '...'}
   final List<Map<String, String>> _chatMessages = [];
 
-  static const String _apiKey = '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'; // Replace with your key
+  static const String _apiKey = ''; // Replace with your key
   static const String _apiUrl = 'https://openrouter.ai/api/v1/chat/completions';
 
   Future<String> _sendMessageToGemini(String message) async {
     final headers = {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer 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',
+      'Authorization': 'Bearer apikey',
     };
 
     final body = jsonEncode({
